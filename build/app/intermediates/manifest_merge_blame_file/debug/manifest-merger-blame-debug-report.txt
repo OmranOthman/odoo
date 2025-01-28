@@ -1,0 +1,154 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.odooproject"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:33:5-66
+15-->C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:33:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:34:5-78
+16-->C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:34:22-76
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:35:5-80
+17-->C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:35:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:36:5-79
+18-->C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:36:22-77
+19
+20    <permission
+20-->[androidx.core:core:1.13.1] C:\Users\OMRAN\.gradle\caches\transforms-3\1ca94e6ed5dba0805e8b169c2f2ea3b9\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+21        android:name="com.example.odooproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.13.1] C:\Users\OMRAN\.gradle\caches\transforms-3\1ca94e6ed5dba0805e8b169c2f2ea3b9\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.13.1] C:\Users\OMRAN\.gradle\caches\transforms-3\1ca94e6ed5dba0805e8b169c2f2ea3b9\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.example.odooproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.13.1] C:\Users\OMRAN\.gradle\caches\transforms-3\1ca94e6ed5dba0805e8b169c2f2ea3b9\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.13.1] C:\Users\OMRAN\.gradle\caches\transforms-3\1ca94e6ed5dba0805e8b169c2f2ea3b9\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+25
+26    <application
+27        android:name="android.app.Application"
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.13.1] C:\Users\OMRAN\.gradle\caches\transforms-3\1ca94e6ed5dba0805e8b169c2f2ea3b9\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="true"
+31        android:icon="@mipmap/ic_launcher"
+32        android:label="odooproject" >
+33        <activity
+34            android:name="com.example.odooproject.MainActivity"
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36            android:exported="true"
+37            android:hardwareAccelerated="true"
+38            android:launchMode="singleTop"
+39            android:theme="@style/LaunchTheme"
+40            android:windowSoftInputMode="adjustResize" >
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+49                android:name="io.flutter.embedding.android.NormalTheme"
+50                android:resource="@style/NormalTheme" />
+51
+52            <intent-filter>
+53                <action android:name="android.intent.action.MAIN" />
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+56            </intent-filter>
+57        </activity>
+58        <!--
+59             Don't delete the meta-data below.
+60             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+61        -->
+62        <meta-data
+63            android:name="flutterEmbedding"
+64            android:value="2" />
+65
+66        <uses-library
+66-->[androidx.window:window:1.2.0] C:\Users\OMRAN\.gradle\caches\transforms-3\ae883ef068420c7448fe65e3e8a94dc5\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+67            android:name="androidx.window.extensions"
+67-->[androidx.window:window:1.2.0] C:\Users\OMRAN\.gradle\caches\transforms-3\ae883ef068420c7448fe65e3e8a94dc5\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+68            android:required="false" />
+68-->[androidx.window:window:1.2.0] C:\Users\OMRAN\.gradle\caches\transforms-3\ae883ef068420c7448fe65e3e8a94dc5\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+69        <uses-library
+69-->[androidx.window:window:1.2.0] C:\Users\OMRAN\.gradle\caches\transforms-3\ae883ef068420c7448fe65e3e8a94dc5\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+70            android:name="androidx.window.sidecar"
+70-->[androidx.window:window:1.2.0] C:\Users\OMRAN\.gradle\caches\transforms-3\ae883ef068420c7448fe65e3e8a94dc5\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+71            android:required="false" />
+71-->[androidx.window:window:1.2.0] C:\Users\OMRAN\.gradle\caches\transforms-3\ae883ef068420c7448fe65e3e8a94dc5\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+72
+73        <provider
+73-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OMRAN\.gradle\caches\transforms-3\56a9515cb604b8bc5765f107d74ebf0f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+74            android:name="androidx.startup.InitializationProvider"
+74-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OMRAN\.gradle\caches\transforms-3\56a9515cb604b8bc5765f107d74ebf0f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+75            android:authorities="com.example.odooproject.androidx-startup"
+75-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OMRAN\.gradle\caches\transforms-3\56a9515cb604b8bc5765f107d74ebf0f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+76            android:exported="false" >
+76-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OMRAN\.gradle\caches\transforms-3\56a9515cb604b8bc5765f107d74ebf0f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+77            <meta-data
+77-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OMRAN\.gradle\caches\transforms-3\56a9515cb604b8bc5765f107d74ebf0f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OMRAN\.gradle\caches\transforms-3\56a9515cb604b8bc5765f107d74ebf0f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+79                android:value="androidx.startup" />
+79-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\OMRAN\.gradle\caches\transforms-3\56a9515cb604b8bc5765f107d74ebf0f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+80            <meta-data
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+82                android:value="androidx.startup" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+83        </provider>
+84
+85        <receiver
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+87            android:directBootAware="false"
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+88            android:enabled="true"
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+89            android:exported="true"
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+90            android:permission="android.permission.DUMP" >
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+95                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+98                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+101                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\OMRAN\.gradle\caches\transforms-3\14000dbbef5f092e41b2bd973d1a1e08\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+102            </intent-filter>
+103        </receiver>
+104    </application>
+105
+106</manifest>
