@@ -115,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     labelText: 'Search',
                     suffixIcon: const Icon(Icons.search),
                     filled: true,
-                    fillColor: isDarkMode ? Colors.grey[800] : Colors.white,
+                    fillColor: isDarkMode ? Colors.grey[800] : Colors.black87,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8.0),
                     ),

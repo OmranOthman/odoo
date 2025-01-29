@@ -9,6 +9,11 @@ pubspec.lock
 .packages
 *.iml
 
+# Flutter related
+.ios/
+macos/
+web/
+
 # Android related
 .android/
 .gradle/
