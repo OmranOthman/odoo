@@ -1,1 +1,0 @@
- C:\\Users\\OMRAN\\Desktop\\OdooProject\\.dart_tool\\flutter_build\\e92df55d98f4f55a3828b93b25202056\\native_assets.yaml: 
