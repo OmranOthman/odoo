@@ -16,14 +16,12 @@ class _SplashScreenState extends State<SplashScreen>
   void initState() {
     super.initState();
 
-    // تأثير التلاشي عند تشغيل الشاشة
     Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {
         _opacity = 1.0;
       });
     });
 
-    // الانتقال بعد 5 ثوانٍ مع أنيميشن الانزلاق من الأسفل إلى الأعلى
     Future.delayed(const Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(_createSlideRoute());
     });
@@ -33,9 +31,9 @@ class _SplashScreenState extends State<SplashScreen>
     return PageRouteBuilder(
       pageBuilder: (context, animation, secondaryAnimation) => const HomeScreen(),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
-        const begin = Offset(0.0, 1.0); // يبدأ من الأسفل
-        const end = Offset.zero; // ينتهي عند موقعه الطبيعي
-        const curve = Curves.easeInOut; // تسهيل الحركة لجعلها سلسة
+        const begin = Offset(0.0, 1.0);
+        const end = Offset.zero;
+        const curve = Curves.easeInOut;
 
         var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
         var offsetAnimation = animation.drive(tween);
@@ -55,9 +53,9 @@ class _SplashScreenState extends State<SplashScreen>
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFFA3449B), // لون بنفسجي
-              Color(0xFFF9F5F9), // لون فاتح
-              Color(0xFF94939B), // لون رمادي
+              Color(0xFFA3449B),
+              Color(0xFFF9F5F9),
+              Color(0xFF94939B),
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,

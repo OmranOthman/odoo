@@ -44,12 +44,11 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  // دالة لإنشاء انتقال مخصص
   Route _createRoute(Widget screen) {
     return PageRouteBuilder(
       pageBuilder: (context, animation, secondaryAnimation) => screen,
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
-        const begin = Offset(-1.0, 0.0); // يبدأ من اليسار
+        const begin = Offset(-1.0, 0.0);
         const end = Offset.zero;
         const curve = Curves.easeInOut;
 
@@ -140,7 +139,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       child: InkWell(
                         onTap: () {
-                          // استخدام الانتقال المخصص
                           Navigator.push(
                             context,
                             _createRoute(ProductDetailScreen(product: product)),

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:odooproject/models/product.dart';
 import '../services/database_service.dart';
