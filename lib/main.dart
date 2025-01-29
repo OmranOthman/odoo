@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:odooproject/screens/SplashScreen.dart';
 import 'package:odooproject/screens/home_screen.dart';
-import 'package:odooproject/screens/product_detail_screen.dart';
+import 'package:odooproject/screens/ProductListScreen.dart';
+import 'package:odooproject/services/odoo_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await OdooService.initOdoo();
+
+  // await DatabaseService.initDb();
   runApp(MyApp());
 }
 
@@ -18,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }

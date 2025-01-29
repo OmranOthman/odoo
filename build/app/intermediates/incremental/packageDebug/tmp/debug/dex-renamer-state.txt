@@ -1,4 +1,4 @@
-#Tue Jan 28 16:58:04 EET 2025
+#Thu Jan 30 00:46:29 EET 2025
 base.0=C\:\\Users\\OMRAN\\Desktop\\OdooProject\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\OMRAN\\Desktop\\OdooProject\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\OMRAN\\Desktop\\OdooProject\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

@@ -26,6 +26,7 @@ MERGED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManif
 INJECTED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+MERGED from [:connectivity_plus] C:\Users\OMRAN\Desktop\OdooProject\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] C:\Users\OMRAN\Desktop\OdooProject\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite_android] C:\Users\OMRAN\Desktop\OdooProject\build\sqflite_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\OMRAN\.gradle\caches\transforms-3\0acb157c126b2cc9a58a7d56cb69ea30\transformed\fragment-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -70,6 +71,8 @@ MERGED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManif
 		ADDED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:33:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:34:5-78
+MERGED from [:connectivity_plus] C:\Users\OMRAN\Desktop\OdooProject\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] C:\Users\OMRAN\Desktop\OdooProject\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
 	android:name
 		ADDED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\main\AndroidManifest.xml:34:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -84,6 +87,8 @@ uses-sdk
 INJECTED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\debug\AndroidManifest.xml
 INJECTED from C:\Users\OMRAN\Desktop\OdooProject\android\app\src\debug\AndroidManifest.xml
+MERGED from [:connectivity_plus] C:\Users\OMRAN\Desktop\OdooProject\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] C:\Users\OMRAN\Desktop\OdooProject\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] C:\Users\OMRAN\Desktop\OdooProject\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] C:\Users\OMRAN\Desktop\OdooProject\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite_android] C:\Users\OMRAN\Desktop\OdooProject\build\sqflite_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44

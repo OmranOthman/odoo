@@ -1,15 +1,19 @@
 import 'package:odoo_rpc/odoo_rpc.dart';
-import '../models/product.dart';
-
+import 'package:odooproject/models/product.dart';
 class OdooService {
-  final OdooClient odoo = OdooClient('http://82.137.250.221:8075');
+  static OdooClient client = OdooClient('http://82.137.250.221:8075');
 
-  Future<void> authenticate() async {
-    await odoo.authenticate('dbtest03', 'omran', 'omran123');
+  static Future<void> initOdoo() async {
+    try {
+      await client.authenticate('dbtest03', 'omran', 'omran123');
+      print("Odoo authentication successful");
+    } on OdooException catch (e) {
+      print("Odoo authentication failed: $e");
+    }
   }
 
-  Future<List<Product>> fetchProducts() async {
-    final response = await odoo.callKw({
+  static Future<List<Product>> fetchProducts() async {
+    final response = await client.callKw({
       'model': 'product.product',
       'method': 'search_read',
       'args': [],
@@ -20,12 +24,18 @@ class OdooService {
           'display_name',
           'create_date',
           'write_date',
-          'image_128',
+          // 'image_128',
           'list_price'
         ],
       },
     });
-
-    return (response as List).map((map) => Product.fromMap(map)).toList();
+    print("Fetched products: $response");
+    if (response != null) {
+      return (response as List).map((map) {
+        print("Mapping product: $map");
+        return Product.fromMap(map);
+      }).toList();
+    }
+    throw "No data";
   }
 }
