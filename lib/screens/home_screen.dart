@@ -113,12 +113,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   controller: searchController,
                   decoration: InputDecoration(
                     labelText: 'Search',
+                    labelStyle: TextStyle(
+                      color: isDarkMode ? Colors.white : Colors.black,
+                    ),
                     suffixIcon: const Icon(Icons.search),
                     filled: true,
-                    fillColor: isDarkMode ? Colors.grey[800] : Colors.black87,
+                    fillColor: isDarkMode ? Colors.grey[800] : Colors.white,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8.0),
                     ),
+                  ),
+                  style: TextStyle(
+                    color: isDarkMode ? Colors.white : Colors.black,
                   ),
                   onChanged: filterProducts,
                 ),
